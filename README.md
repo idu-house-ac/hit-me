@@ -35,6 +35,8 @@ The page currently ships with **flat placeholder images**. To swap in the real o
 
 The site is served by GitHub Pages from the `main` branch root.
 
+**One-time GitHub step:** in the repo go to Settings, Pages. Under "Build and deployment" set Source to "Deploy from a branch", pick `main` and `/ (root)`, and save. The `CNAME` file in the repo fills in the custom domain automatically. The page is then live at https://idu-house-ac.github.io/hit-me/ within a minute or two, and at pitch.iduhouse.com once DNS is set.
+
 **One-time DNS step (Squarespace):** in the iduhouse.com domain's DNS settings add a CNAME record:
 
 | Host | Type | Value |
