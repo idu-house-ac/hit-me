@@ -1,5 +1,4 @@
-Drop the five original images here, named exactly:
+Original images live here, named apartment, office, kitchen, casings and alley (.png or .jpg).
 
-    apartment.jpg  office.jpg  kitchen.jpg  casings.jpg  alley.jpg
-
-Then run `python3 scripts/build-images.py` from the repo root to regenerate the responsive sizes in `images/`.
+Run `python3 scripts/build-images.py` from the repo root to regenerate the responsive sizes in `images/`.
+If larger originals arrive, raise MAX_W in the script and update the srcset widths in index.html to match.

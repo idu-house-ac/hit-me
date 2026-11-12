@@ -19,16 +19,16 @@ Live address once DNS is set: **https://pitch.iduhouse.com/**
 
 ## Images
 
-The page currently ships with **flat placeholder images**. To swap in the real ones:
+The five originals are in `images/src/` (1300 px screenshots supplied by Aaron, November 2026). To replace them:
 
-1. Copy the five originals into `images/src/`, named exactly `apartment.jpg`, `office.jpg`, `kitchen.jpg`, `casings.jpg`, `alley.jpg`.
+1. Copy the new files into `images/src/`, named `apartment`, `office`, `kitchen`, `casings`, `alley` (.png or .jpg). If they are wider than 1296 px, raise `MAX_W` in the script and update the srcset widths in `index.html`.
 2. Run:
 
    ```bash
    python3 scripts/build-images.py
    ```
 
-   (Needs Pillow: `pip install pillow`.) This writes 640, 1024, 1536 and 1792 px JPEG and WebP versions, plus `images/og.jpg`.
+   (Needs Pillow: `pip install pillow`.) This writes 640, 1024 and 1296 px JPEG and WebP versions, plus `images/og.jpg`.
 3. Commit and push.
 
 ## Deploying
@@ -55,7 +55,6 @@ Then in the GitHub repo under Settings, Pages, confirm the custom domain reads `
 
 ## Launch checklist
 
-- [ ] Real images in `images/src/`, `build-images.py` run, result committed
 - [ ] DNS CNAME added in Squarespace, HTTPS enforced on GitHub Pages
 - [ ] Legal call on the Investment row
 - [ ] Open the live page on a phone and a desktop once
